@@ -143,8 +143,6 @@ brew install --cask \
 - Go
 - Node JS
 
-### Docker
-
 ### Go
 
 ```bash
@@ -159,13 +157,16 @@ brew install go
 
 ### IOS Environment
 
-Instalar cocoapods:
+Instalar Ruby Env:
 
 ```bash
 brew install rbenv ruby-build rbenv-default-gems rbenv-gemset
-rbenv install 3.2.2
-rbenv global 3.2.2
-sudo gem install cocoapods
+```
+
+Instalar Cocoapods:
+
+```bash
+brew install cocoapods
 ```
 
 ## BD
