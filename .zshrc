@@ -23,6 +23,5 @@ fi
 # Env
 HOMEBREW=/opt/homebrew/bin
 FLUTTER_BIN=$HOME/development/flutter/bin
-# GEM_HOME=$HOME/.rbenv/versions/3.2.2/bin
 
 PATH=$HOMEBREW:$FLUTTER_BIN:$PATH
