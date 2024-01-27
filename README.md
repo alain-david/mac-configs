@@ -123,25 +123,22 @@ Instalar Apps:
 
 ```bash
 brew install --cask \
-    betterzip \
     google-chrome \
-    visual-studio-code \
-    suspicious-package
+    visual-studio-code
 ```
 
 # Apps
 
+- BetterZip
 - CleanMyMac
-- Telegram
-- Whatsapp
 - Spotify
+- Telegram, WhatsApp, Discord
 
 ## Backend
 
 - Postman
 - Docker
 - Go
-- Node JS
 
 ### Go
 
@@ -150,6 +147,16 @@ brew install go
 ```
 
 ## Frontend
+
+- Node.js
+
+### Node.js
+
+```bash
+brew install node
+```
+
+## Mobile
 
 - Flutter
 - IOS Environment
