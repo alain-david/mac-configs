@@ -43,11 +43,16 @@
 
 ### Internet Accounts
 
-- Add Google accounts
+- Add Google accounts.
 
 ### Mouse
 
-- Natural scrolling
+- Natural scrolling.
+
+### Trackpad
+
+- Enable tap to click with one finger.
+- Scroll & Zoom: Uncheckj all apart from Zoom in and out.
 
 ### Apps
 
@@ -55,7 +60,7 @@
 
 # Instalar Xcode
 
-Desde la AppStore o usando:
+Desde la AppStore y después:
 
 ```bash
 xcode-select --install
@@ -123,16 +128,35 @@ Instalar Apps:
 
 ```bash
 brew install --cask \
-    google-chrome \
+    betterzip \
+    brave-browser \
     visual-studio-code
 ```
 
 # Apps
 
-- BetterZip
 - CleanMyMac
-- Spotify
-- Telegram, WhatsApp, Discord
+- Unarchiver https://theunarchiver.com
+- Whatsapp
+- Discord
+
+## FrontEnd
+
+### Angular
+
+Instalar NodeJS:
+
+```bash
+brew install node
+```
+
+Instalar Yarn: https://yarnpkg.com/getting-started/install
+
+Instalar Angular CLI:
+
+```
+yarn install -g @angular/cli
+```
 
 ## Backend
 
@@ -144,16 +168,6 @@ brew install --cask \
 
 ```bash
 brew install go
-```
-
-## Frontend
-
-- Node.js
-
-### Node.js
-
-```bash
-brew install node
 ```
 
 ## Mobile
@@ -184,4 +198,4 @@ brew install cocoapods
 
 ## Imagenes
 
-- Adobe Photoshop 2023
+- GIMP
