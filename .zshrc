@@ -3,8 +3,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(
-    git 
-    golang
+    git
     brew
     # Customs plugins
     zsh-autosuggestions
@@ -22,6 +21,7 @@ fi
 
 # Env
 HOMEBREW=/opt/homebrew/bin
-FLUTTER_BIN=$HOME/development/flutter/bin
+NODE=/opt/homebrew/opt/node@22/bin
+# FLUTTER_BIN=$HOME/development/flutter/bin
 
-PATH=$HOMEBREW:$FLUTTER_BIN:$PATH
+PATH=$HOMEBREW:$NODE:$PATH

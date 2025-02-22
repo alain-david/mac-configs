@@ -58,9 +58,7 @@
 
 - Finder Settings
 
-# Instalar Xcode
-
-Desde la AppStore y después:
+# Instalar Xcode command line tools:
 
 ```bash
 xcode-select --install
@@ -90,7 +88,6 @@ Instalar Tools:
 
 ```bash
 brew install \
-    neofetch \
     neovim \
     git
 ```
@@ -118,44 +115,43 @@ Instalar Plugin Autosuggestions:
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
+Instalar VS Code:
+
+```bash
+brew install --cask visual-studio-code
+
+```
+
 Clonar repo:
 
 ```bash
 git clone https://alain-david/mac-configs
 ```
 
-Instalar Apps:
-
-```bash
-brew install --cask \
-    betterzip \
-    brave-browser \
-    visual-studio-code
-```
-
-# Apps
-
-- CleanMyMac
-- Unarchiver https://theunarchiver.com
-- Whatsapp
-- Discord
-
 ## FrontEnd
 
 ### Angular
 
-Instalar NodeJS:
+Instalar NodeJS y Yarn:
 
 ```bash
-brew install node
-```
+# Descarga e instala Node.js:
+brew install node@22
 
-Instalar Yarn: https://yarnpkg.com/getting-started/install
+# Verifica la versión de Node.js:
+node -v # Debería mostrar "v22.14.0".
+
+# Descarga e instala Yarn:
+corepack enable yarn
+
+# Verifica la versión de Yarn:
+yarn -v
+```
 
 Instalar Angular CLI:
 
-```
-yarn install -g @angular/cli
+```bash
+sudo yarn global add @angular/cli
 ```
 
 ## Backend
