@@ -1,6 +1,6 @@
 # Mac configs
 
-# System Preferences
+## System Preferences
 
 - Login Apple ID
 
@@ -58,13 +58,13 @@
 
 - Finder Settings
 
-# Instalar Xcode command line tools:
+## Instalar Xcode command line tools:
 
 ```bash
 xcode-select --install
 ```
 
-# Instalar Homebrew
+## Instalar Homebrew
 
 Desde la web o usando:
 
@@ -84,12 +84,22 @@ Comprobar que todo este bien:
 brew doctor
 ```
 
-Instalar Tools:
+### Instalar Tools:
 
 ```bash
-brew install \
-    neovim \
-    git
+brew install git \
+    docker \
+    ranger \
+    neovim
+```
+
+```bash
+brew install --cask visual-studio-code \
+    font-jetbrains-mono-nerd-font \
+    alacritty
+    google-chrome \
+    insomnia \
+    vlc
 ```
 
 Configurar Git:
@@ -101,7 +111,7 @@ git config --global credential.helper osxkeychain
 git config --global init.defaultBranch main
 ```
 
-# Instalar Oh My Zsh
+## Instalar Oh My Zsh
 
 Desde la web o usando:
 
@@ -113,13 +123,6 @@ Instalar Plugin Autosuggestions:
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-Instalar VS Code:
-
-```bash
-brew install --cask visual-studio-code
-
 ```
 
 Clonar repo:
@@ -156,15 +159,9 @@ sudo yarn global add @angular/cli
 
 ## Backend
 
-- Postman
+- Dotnet-sdk
 - Docker
-- Go
-
-### Go
-
-```bash
-brew install go
-```
+- Golang
 
 ## Mobile
 
@@ -186,12 +183,12 @@ Instalar Cocoapods:
 brew install cocoapods
 ```
 
-## BD
+### Databases
 
 - MongoDB Compass
 - RedisInsight
 - Table Plus
 
-## Imagenes
+## Images
 
 - GIMP
