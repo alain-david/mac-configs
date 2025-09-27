@@ -101,7 +101,6 @@ brew doctor
 ```bash
 brew install git \
     ranger \
-    dotnet@8 \
     neovim
 ```
 
@@ -115,7 +114,7 @@ brew install --cask font-jetbrains-mono-nerd-font \
     visual-studio-code
 ```
 
-## Configurar Git:
+### Configurar Git:
 
 ```bash
 git config --global user.name "Alain Puga"
@@ -177,6 +176,19 @@ sudo yarn global add @angular/cli
 ## Backend
 
 - Docker
+- .NET 8
+
+### .NET
+
+Instalar usando Homebrew:
+
+```bash
+brew install dotnet@8
+```
+
+o descargar desde:
+
+- [Microsoft Official](https://dotnet.microsoft.com/es-es/download)
 
 ### Docker:
 
