@@ -2,7 +2,6 @@
 /*
 
 # Except for the files and folders we want to track
-!.config
 !.gitignore
-!.zshrc
-!README.md
+!alacritty
+!ranger

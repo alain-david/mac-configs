@@ -21,7 +21,7 @@ fi
 
 # Env
 HOMEBREW=/opt/homebrew/bin
-NODE=/opt/homebrew/opt/node@22/bin
-# FLUTTER_BIN=$HOME/development/flutter/bin
+DOTNET=$HOME/.dotnet/tools
+FLUTTER=$HOME/flutter/bin
 
-PATH=$HOMEBREW:$NODE:$PATH
+PATH=$HOMEBREW:$DOTNET:$FLUTTER:$HOME/.pub-cache/bin:$PATH

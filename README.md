@@ -1,6 +1,8 @@
-# Mac configs
+# MacOS Configs
 
-# System Preferences
+Estas son las configuraciones que yo uso en mi instalacion de MacOS para tener el sistema lo más parécido a como lo uso rápido.
+
+## System Preferences
 
 - Login Apple ID
 
@@ -11,25 +13,20 @@
 ### General
 
 - Actualizar el sistema
-- Storage in Icloud
 
 ### Appearance
 
 - Theme Dark
 - Show scroll bars: When scrolling.
 
-### Control Center
+### Menu Bar
 
-- Menubar (Remover iconos y mostrar % de batería).
-- Automatically hide and show menu bar: always.
-
-### Siri & Spotlight
-
-- Spotlight (Quitar fonts, images, files etc).
+- Show Icons When Active
 
 ### Desktop & Dock
 
 - Ajustar Dock
+- Minimize windows into application icon: false
 - Automatically hide and show the dock: true
 - Show indicators for open apps: true
 - Show suggested apps: false
@@ -39,34 +36,47 @@
 
 - Night Shift: 7pm to 7 am.
 
-### Wallpapers
+### Spotlight
+
+- Spotlight (Quitar fonts, images, files etc).
+- IPhone Apps: false
 
 ### Internet Accounts
 
 - Add Google accounts.
 
+### Keyboard
+
+- U.S. International - PC
+
 ### Mouse
 
-- Natural scrolling.
+- Natural scrolling: false
 
 ### Trackpad
 
 - Enable tap to click with one finger.
-- Scroll & Zoom: Uncheckj all apart from Zoom in and out.
+- Scroll & Zoom: Uncheck all apart from Zoom in and out.
 
-### Apps
+### Finder Settings
 
-- Finder Settings
+- General: Show items(false); New Finder windows(alain).
+- SideBar: Perzonalizar.
+- Advanced: Show Filename(true);
 
-# Instalar Xcode command line tools:
+## Instalar Xcode command line tools:
 
 ```bash
 xcode-select --install
 ```
 
-# Instalar Homebrew
+## Instalar Homebrew
 
-Desde la web o usando:
+Desde la web:
+
+- [HomeBrew WebSite](https://brew.sh)
+
+o usando:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -75,7 +85,9 @@ Desde la web o usando:
 Agregar Homebrew al path.
 
 ```bash
-echo 'PATH="/usr/local/bin:$PATH"' >> ~/.bash_profile
+echo >> /Users/alain/.zprofile
+echo 'eval "$(/opt/homebrew/bin shellenv)"' >> /Users/alain/.zprofile
+eval "$(/opt/homebrew/bin shellenv)"
 ```
 
 Comprobar que todo este bien:
@@ -84,15 +96,26 @@ Comprobar que todo este bien:
 brew doctor
 ```
 
-Instalar Tools:
+## Instalar Tools:
 
 ```bash
-brew install \
-    neovim \
-    git
+brew install git \
+    ranger \
+    dotnet@8 \
+    neovim
 ```
 
-Configurar Git:
+## Instalar Apps:
+
+```bash
+brew install --cask font-jetbrains-mono-nerd-font \
+    alacritty \
+    google-chrome \
+    insomnia \
+    visual-studio-code
+```
+
+## Configurar Git:
 
 ```bash
 git config --global user.name "Alain Puga"
@@ -101,28 +124,25 @@ git config --global credential.helper osxkeychain
 git config --global init.defaultBranch main
 ```
 
-# Instalar Oh My Zsh
+## Instalar Oh My Zsh
 
-Desde la web o usando:
+Desde la web:
+
+- [Oh my zsh](https://ohmyz.sh/#install)
+
+o usando:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 ```
 
-Instalar Plugin Autosuggestions:
+### Instalar Plugin Autosuggestions:
 
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-Instalar VS Code:
-
-```bash
-brew install --cask visual-studio-code
-
-```
-
-Clonar repo:
+## Clonar repo:
 
 ```bash
 git clone https://alain-david/mac-configs
@@ -156,14 +176,28 @@ sudo yarn global add @angular/cli
 
 ## Backend
 
-- Postman
 - Docker
-- Go
 
-### Go
+### Docker:
+
+#### Instalar Docker y Colima con HomeBrew:
 
 ```bash
-brew install go
+brew install docker colima
+```
+
+#### Iniciar Colima:
+
+```bash
+colima start --cpu 4 --memory 8 --disk 60
+```
+
+(Ejemplo: 4 CPU, 8 GB RAM, 60 GB de disco para contenedores.)
+
+#### Probar docker:
+
+```bash
+docker run hello-world
 ```
 
 ## Mobile
@@ -195,3 +229,7 @@ brew install cocoapods
 ## Imagenes
 
 - GIMP
+
+## Uninstallers:
+
+- [AppCleaner (gratis)](https://freemacsoft.net/appcleaner/)
