@@ -86,8 +86,8 @@ Agregar Homebrew al path.
 
 ```bash
 echo >> /Users/alain/.zprofile
-echo 'eval "$(/opt/homebrew/bin shellenv)"' >> /Users/alain/.zprofile
-eval "$(/opt/homebrew/bin shellenv)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/alain/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 Comprobar que todo este bien:
@@ -144,7 +144,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ## Clonar repo:
 
 ```bash
-git clone https://alain-david/mac-configs
+git clone https://github.com/alain-david/mac-configs.git
 ```
 
 ## FrontEnd
@@ -180,13 +180,7 @@ sudo yarn global add @angular/cli
 
 ### .NET
 
-Instalar usando Homebrew:
-
-```bash
-brew install dotnet@8
-```
-
-o descargar desde:
+Descargar desde:
 
 - [Microsoft Official](https://dotnet.microsoft.com/es-es/download)
 

@@ -20,8 +20,8 @@ else
 fi
 
 # Env
-HOMEBREW=/opt/homebrew/bin
+HOMEBREW=/opt/homebrew
 DOTNET=$HOME/.dotnet/tools
 FLUTTER=$HOME/flutter/bin
 
-PATH=$HOMEBREW:$DOTNET:$FLUTTER:$HOME/.pub-cache/bin:$PATH
+PATH=$HOMEBREW/bin:$DOTNET:$FLUTTER:$HOME/.pub-cache/bin:$PATH
