@@ -1,6 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=green'
 
 plugins=(
     git
@@ -8,7 +9,6 @@ plugins=(
     # Customs plugins
     zsh-autosuggestions
 )
-
 
 source $ZSH/oh-my-zsh.sh
 
