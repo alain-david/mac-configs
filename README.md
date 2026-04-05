@@ -19,22 +19,23 @@ Estas son las configuraciones que yo uso en mi instalacion de MacOS para tener e
 - Theme Dark
 - Show scroll bars: When scrolling.
 
-### Menu Bar
-
-- Show Icons When Active
-
 ### Desktop & Dock
 
 - Ajustar Dock
-- Minimize windows into application icon: false
+- Minimize windows into application icon: true
 - Automatically hide and show the dock: true
 - Show indicators for open apps: true
 - Show suggested apps: false
+- Click wallpaper to show desktop: Only in State Manager
 - Hot Corners: empty
 
 ### Display
 
-- Night Shift: 7pm to 7 am.
+- Night Shift: Sunset to Sunrise
+
+### Menu Bar
+
+- Show Icons When Active
 
 ### Spotlight
 
