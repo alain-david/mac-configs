@@ -177,9 +177,9 @@ sudo yarn global add @angular/cli
 ## Backend
 
 - Docker
-- .NET 8
+- Dotnet 10
 
-### .NET
+### Dotnet
 
 Descargar desde:
 

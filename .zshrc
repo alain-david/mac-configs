@@ -19,10 +19,18 @@ else
     export EDITOR='vim'
 fi
 
-# Env
+# Homebrew
 HOMEBREW_BIN=/opt/homebrew/bin
+
+# Dotnet
+DOTNET_ROOT=/usr/local/share/dotnet
+
+# Flutter
 FLUTTER=$HOME/flutter/bin
 PUB_CACHE=$HOME/.pub-cache/bin
+
+# Docker
 DOCKER_CLI=/Applications/Docker.app/Contents/Resources/bin
 
-PATH=$HOMEBREW_BIN:$FLUTTER:$PUB_CACHE:$DOCKER_CLI:$PATH
+# Add to PATH
+PATH=$HOMEBREW_BIN:$DOTNET_ROOT:$FLUTTER:$PUB_CACHE:$PATH
